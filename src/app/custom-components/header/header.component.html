@@ -1,4 +1,5 @@
-<nav id="NAVIGATION_CONTAINER">
+<!-- Desktop/Tablet Navigation -->
+<nav id="NAVIGATION_CONTAINER" *ngIf="!isMobile">
     <div class="NAVIGATION_LOGO">
         <img src="/assets/images/logo.jpg" alt="BlackBird Homes GR Logo"  />
     </div>
@@ -6,4 +7,8 @@
         <a href="/">Portfolio</a>
         <a href="/">Services</a>
         <a href="/">Contact</a>
+</nav>
+<!-- Mobile Navigation -->
+<nav *ngIf="isMobile">
+    <h1>This is my mobile nav</h1>
 </nav>
