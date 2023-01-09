@@ -1,16 +1,16 @@
-#NAVIGATION_CONTAINER{
+.NAVIGATION_CONTAINER {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 20px;
 }
 .NAVIGATION_LOGO{
-    width: 350px;
+    margin-bottom: 20px;
     img{
         width: 150px;
     }
 }
-.NAVIGATION_LINK{
+.NAVIGATION_LINKS{
   display: flex;
   a{
 
