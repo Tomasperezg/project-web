@@ -1,15 +1,14 @@
 <!-- Desktop/Tablet Navigation -->
 <nav class="NAVIGATION_CONTAINER" *ngIf="!isMobile">
-    <div class="NAVIGATION_LOGO">
-        <img src="/assets/images/logo.jpg" alt="BlackBird Homes GR Logo"  />
-    </div>
     <div class="NAVIGATION_LINKS">
-        <a class="NAV_LINK" href="/">Home</a>
-        <a class="NAV_LINK" href="/">Portfolio</a>
-        <a class="NAV_LINK" href="/">Services</a>
-        <a class="NAV_LINK" href="/">Contact</a>
+        <a class="NAV_LINK" routerLink="/">Home</a>
+        <a class="NAV_LINK" routerLink="/">Portfolio</a>
+        <img class="object-fill" ngSrc="assets/images/logo.jpg" width="150" height="150" alt="BlackBird Homes GR Logo"  />
+        <a class="NAV_LINK" routerLink="/">Services</a>
+        <a class="NAV_LINK" routerLink="/">Contact</a>
     </div>
 </nav>
+<!-- <h1 class="text-3xl font-bold underline">hello</h1> -->
 <!-- Mobile Navigation -->
 <nav id="NAVIGATION_CONTAINER_MOB" *ngIf="isMobile">
     <h1>This is my mobile nav</h1>
