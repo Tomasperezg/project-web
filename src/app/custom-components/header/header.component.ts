@@ -10,6 +10,7 @@ import { NgOptimizedImage } from '@angular/common'
 
 export class HeaderComponent implements OnInit{
   isMobile: boolean = false;
+  isActive: boolean = true;
   isLandscapeMode: boolean = false;
   width:number = window.innerWidth;
   height:number = window.innerHeight;

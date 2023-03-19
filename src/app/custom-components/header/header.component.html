@@ -1,11 +1,15 @@
 <!-- Desktop/Tablet Navigation -->
-<nav class="NAVIGATION_CONTAINER" *ngIf="!isMobile">
-    <div class="NAVIGATION_LINKS">
-        <a class="NAV_LINK" routerLink="/">Home</a>
-        <a class="NAV_LINK" routerLink="/">Portfolio</a>
-        <img class="object-fill" ngSrc="assets/images/logo.jpg" width="150" height="150" alt="BlackBird Homes GR Logo"  />
-        <a class="NAV_LINK" routerLink="/">Services</a>
-        <a class="NAV_LINK" routerLink="/">Contact</a>
+<nav class="flex items-center justify-between flex-wrap bg-white p-6" *ngIf="!isMobile">
+    <div>
+        <img ngSrc="assets/images/logo.jpg" width="150" height="150" alt="Logo" />
+    </div>
+    <div class="block flex-grow lg:flex lg:items-center lg:w-auto">
+        <ul class="flex justify-around">
+            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/home">Home</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/">Porftfolio</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/">Services</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/">Contact</a></li>
+        </ul>
     </div>
 </nav>
 <!-- <h1 class="text-3xl font-bold underline">hello</h1> -->
