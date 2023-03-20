@@ -1,14 +1,14 @@
 <!-- Desktop/Tablet Navigation -->
-<nav class="flex items-center justify-between flex-wrap bg-white p-6" *ngIf="!isMobile">
+<nav class="flex items-center justify-between flex-wrap bg-white p-6 container mx-auto" *ngIf="!isMobile">
     <div>
         <img ngSrc="assets/images/logo.jpg" width="150" height="150" alt="Logo" />
     </div>
     <div class="block flex-grow lg:flex lg:items-center lg:w-auto">
         <ul class="flex justify-around">
-            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/home">Home</a></li>
-            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/">Porftfolio</a></li>
-            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/">Services</a></li>
-            <li><a class="text-black-dark text-2xl tracking-wide font-header" routerLink="/">Contact</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header link link-underline link-underline-black hover:underline active:underline focus:underline focus-within:underline focus-visible:underline after:underline decoration-2 outline-1" routerLink="/home" routerLinkActive="underline">Home</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header hover:underline active:underline focus:underline decoration-2" routerLink="/porftfolio" routerLinkActive="underline">Porftfolio</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header hover:underline active:underline focus:underline decoration-2" routerLink="/services" routerLinkActive="underline">Services</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header hover:underline active:underline focus:underline decoration-2" routerLink="/contact" routerLinkActive="underline">Contact</a></li>
         </ul>
     </div>
 </nav>
