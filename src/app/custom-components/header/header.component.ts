@@ -10,7 +10,6 @@ import { NgOptimizedImage } from '@angular/common'
 
 export class HeaderComponent implements OnInit{
   isMobile: boolean = false;
-  isActive: boolean = true;
   isLandscapeMode: boolean = false;
   width:number = window.innerWidth;
   height:number = window.innerHeight;
@@ -20,7 +19,9 @@ export class HeaderComponent implements OnInit{
   ngOnInit(): void {
     this.isMobile = this.width < this.mobileWidth;
     this.isLandscapeMode = this.width < this.landscapeWidht;
-    console.log(this.isMobile);
+    console.log("mobil: " + this.isMobile);
+    console.log("landscape: " + this.isLandscapeMode);
+    console.log(this.width)
   }
 
   onWindowRessize(event: { target: { innerWidth: number; innerHeight: number; }; }){
