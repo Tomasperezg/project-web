@@ -15,5 +15,9 @@
 <!-- <h1 class="text-3xl font-bold underline">hello</h1> -->
 <!-- Mobile Navigation -->
 <nav id="NAVIGATION_CONTAINER_MOB" *ngIf="isMobile || isLandscapeMode">
-    <h1>This is my mobile nav</h1>
+    <div (click)="onClick()" class="btn">
+        <div class="icon-bar" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'topX'"></div>
+        <div class="icon-bar" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'hide'"></div>
+        <div class="icon-bar" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'bottomX'"></div>
+      </div>
 </nav>
