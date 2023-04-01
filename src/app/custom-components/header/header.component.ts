@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common'
 import { animationNav } from 'src/app/animations/mobil-nav-icon';
-
+import { slideAnimation } from 'src/app/animations/slide';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   animations: [
-    animationNav
+    animationNav,
+    slideAnimation
   ]
 })
 
@@ -16,8 +17,11 @@ import { animationNav } from 'src/app/animations/mobil-nav-icon';
 export class HeaderComponent implements OnInit{
   // flag be consumed by the template
   isHamburguer = true;
+  isOpen = true;
   onClick() {
     this.isHamburguer = !this.isHamburguer;
+    this.isOpen = !this.isOpen;
+    
   }
 
 
