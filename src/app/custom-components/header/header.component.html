@@ -15,17 +15,22 @@
 <!-- <h1 class="text-3xl font-bold underline">hello</h1> -->
 <!-- Mobile Navigation -->
 <nav id="NAVIGATION_CONTAINER_MOB" *ngIf="isMobile || isLandscapeMode" class="bg-black-dark py-4">
-    <div (click)="onClick()" class="btn ml-2">
-        <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'topX'"></div>
-        <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'hide'"></div>
-        <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'bottomX'"></div>
+    <div class="flex justify-between">
+        <div (click)="onClick()" class="btn ml-2">
+            <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'topX'"></div>
+            <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'hide'"></div>
+            <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'bottomX'"></div>
+        </div>
+        <div class="pr-1.5">
+            <p class="text-white font-header tracking-wide">BLACKBIRD HOMES GR</p>
+        </div>
     </div>
     <div>
         <ul [@slide]="isOpen ? 'closed' : 'open'" class="text-center flex flex-col space-y-3">
-            <li><a class="text-white text-xl font-header tracking-wide " ruterLink="/home">Home</a></li>
-            <li><a class="text-white text-xl font-header tracking-wide " ruterLink="/">Porftfolio</a></li>
-            <li><a class="text-white text-xl font-header tracking-wide " ruterLink="/">Services</a></li>
-            <li><a class="text-white text-xl font-header tracking-wide " ruterLink="/">Contact</a></li>
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/home">Home</a></li>
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/">Porftfolio</a></li>
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/">Services</a></li>
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/">Contact</a></li>
         </ul>
     </div>
 </nav>
