@@ -7,13 +7,15 @@ import { HeaderComponent } from './custom-components/header/header.component';
 import { BannerComponent } from './custom-components/banner/banner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { DoubleBannerLeftComponent } from './custom-components/double-banner-left/double-banner-left.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    HomeComponent
+    HomeComponent,
+    DoubleBannerLeftComponent
     
   ],
   imports: [
