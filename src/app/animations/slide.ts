@@ -12,30 +12,31 @@ import {
       state('open', style({
         height: '150px',
         opacity: 1,
-        backgroundColor: '#2c2c2c'
+        backgroundColor: '#fffff',
+        zIndex: -99,
       })),
       state('closed', style({
         height: '0px',
         opacity: 0,
       })),
       transition('open => closed', [
-        animate('0.3s')
+        animate('0.2s')
       ]),
       transition('closed => open', [
-        animate('0.3s')
+        animate('0.2s')
       ]),
       transition('* => closed', [
-        animate('0.3s')
+        animate('0.2s')
       ]),
       transition('* => open', [
-        animate('0.3s')
+        animate('0.2s')
       ]),
       transition('open <=> closed', [
-        animate('0.3s')
+        animate('0.2s')
       ]),
       transition ('* => open', [
-        animate ('0.3s',
-          style ({ opacity: '*' }),
+        animate ('0.2s',
+          style ({ opacity: '*',}),
         ),
       ]),
       transition('* => *', [

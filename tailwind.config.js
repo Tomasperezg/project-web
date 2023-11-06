@@ -21,7 +21,8 @@ module.exports = {
       current: 'currentColor',
       'white': '#ffffff',
       'black': {
-        dark: '#2c2c2c'
+        dark: '#2c2c2c',
+        generic: '#000000',
        }
     },
     fontFamily: {

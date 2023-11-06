@@ -6,7 +6,7 @@
     <div class="block flex-grow lg:inline lg:items-center lg:w-auto">
         <ul class="flex justify-around">
             <li><a class="text-black-dark text-2xl tracking-wide font-header link link-underline link-underline-black hover:underline active:underline focus:underline decoration-2" routerLink="/home" routerLinkActive="underline">Home</a></li>
-            <li><a class="text-black-dark text-2xl tracking-wide font-header hover:underline active:underline focus:underline decoration-2" routerLink="/porftfolio" routerLinkActive="underline">Porftfolio</a></li>
+            <li><a class="text-black-dark text-2xl tracking-wide font-header hover:underline active:underline focus:underline decoration-2" routerLink="/portfolio" routerLinkActive="underline">Portfolio</a></li>
             <li><a class="text-black-dark text-2xl tracking-wide font-header hover:underline active:underline focus:underline decoration-2" routerLink="/services" routerLinkActive="underline">Services</a></li>
             <li><a class="text-black-dark text-2xl tracking-wide font-header hover:underline active:underline focus:underline decoration-2" routerLink="/contact" routerLinkActive="underline">Contact</a></li>
         </ul>
@@ -14,23 +14,23 @@
 </nav>
 <!-- <h1 class="text-3xl font-bold underline">hello</h1> -->
 <!-- Mobile Navigation -->
-<nav id="NAVIGATION_CONTAINER_MOB" *ngIf="isMobile || isLandscapeMode" class="bg-black-dark py-4">
+<nav id="NAVIGATION_CONTAINER_MOB" *ngIf="isMobile || isLandscapeMode" class="bg-black-generic py-4">
     <div class="flex justify-between">
-        <div (click)="onClick()" class="btn ml-2">
+        <div (click)="onClick()" class="btn ml-2 my-4">
             <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'topX'"></div>
             <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'hide'"></div>
             <div class="bg-white h-0.5 m-1 w-6" [@hamburguerX]="isHamburguer ? 'hamburguer' : 'bottomX'"></div>
         </div>
         <div class="pr-1.5">
-            <p class="text-white font-header tracking-wide">BLACKBIRD HOMES GR</p>
+            <img ngSrc="assets/images/logoWhiteAndBlack.png" width="75" height="75" alt="Logo" />
         </div>
     </div>
-    <div>
-        <ul [@slide]="isOpen ? 'closed' : 'open'" class="text-center flex flex-col space-y-3">
-            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/home">Home</a></li>
-            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/">Porftfolio</a></li>
-            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/">Services</a></li>
-            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " ruterLink="/">Contact</a></li>
+    <div class="-z-50">
+        <ul [@slide]="isOpen ? 'closed' : 'open'" class="text-center flex flex-col space-y-3 -z-50">
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " routerLink="/home">Home</a></li>
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " routerLink="/portfolio">Portfolio</a></li>
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " routerLink="/">Services</a></li>
+            <li><a (click)="onClick()" class="text-white text-xl font-header tracking-wide " routerLink="/">Contact</a></li>
         </ul>
     </div>
 </nav>

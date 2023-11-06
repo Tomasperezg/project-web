@@ -8,6 +8,8 @@ import { BannerComponent } from './custom-components/banner/banner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { DoubleBannerLeftComponent } from './custom-components/double-banner-left/double-banner-left.component';
+import { DoubleBannerRightComponent } from './custom-components/double-banner-right/double-banner-right.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DoubleBannerLeftComponent } from './custom-components/double-banner-lef
     HeaderComponent,
     BannerComponent,
     HomeComponent,
-    DoubleBannerLeftComponent
+    DoubleBannerLeftComponent,
+    DoubleBannerRightComponent,
+    PortfolioComponent
     
   ],
   imports: [
