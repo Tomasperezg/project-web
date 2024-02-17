@@ -6,10 +6,17 @@ module.exports = {
   theme: {
     extend: {
       maxWidth: {
-        '75': '75rem'
+        '75': '75rem',
+        '70': '70rem',
       },
       height: {
-        '528': '33rem'
+        '720': '45rem'
+      },
+      fontWeight: {
+        hairline: '100'
+      },
+      textUnderlineOffset: {
+        20: '20px',
       }
       
     },
@@ -26,10 +33,17 @@ module.exports = {
       'black': {
         dark: '#2c2c2c',
         generic: '#000000',
-       }
+       },
+       'blue': {
+        skyBlue: '#6b9ecf',
+        navy: '#3273cd',
+       },
+       'green': {
+        darkGreen: '#304561'
+       },
     },
     fontFamily: {
-      sans: ['Roboto', 'playfair-display'],
+      'body': ['Roboto'],
       'header': ['playfair-display']
     }
   },
